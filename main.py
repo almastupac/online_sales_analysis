@@ -1,5 +1,7 @@
 from product import Product
 from product_manager import ProductManager
+from cart import Cart
+
 
 #  Creating instance
 manager1 = ProductManager()
@@ -20,3 +22,16 @@ print(manager1.info_products())
 
 #  Display total value
 print(manager1.total_value())
+
+
+#  Creating instance class Cart
+cart1 = Cart()
+
+#  Adding products
+cart1.add_product(product1)
+cart1.add_product(product2)
+cart1.add_product(product3)
+
+#  Calculat total and display list of products
+print(cart1.calculate_total())
+print(cart1.info_cart())
